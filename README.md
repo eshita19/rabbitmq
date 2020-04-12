@@ -13,12 +13,15 @@
   - JMS is for messaging what JDBC is for database connections.
   - **Two types of messaging**:
     - **Point to Point messaging(P2P messaging)**:
-      - It is mesant for single receiver.
-      - Sender publishes message to messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
-      - 
+      - It is for single receiver.
+      - Sender publishes message to a virtual channel(queue) in  messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
+      - There are two types: ASync Fire and Forget and  Sync request and reply message(reciever sends ack from different queue).
+      - Example: Mail or Greeting card.
     - **Publish/Subscribe messaging**: 
-    
-     
+      - One sender multiple receiver.
+      - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to messaging server, instead of them reading it from messaging server.
+      - Example: Newspaper subscription.
+       
 
 # Rabbit MQ
 
