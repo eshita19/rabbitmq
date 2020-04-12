@@ -10,6 +10,7 @@
 # Java Messaging Service (JMS 2.0)
   - There are multiple messaging server available like : ActiveMQ, SonicMQ, TibcoMQ and Websphere MQ.
   - JMS provides a standardised API. All the messaging server uses same API.
+  - JMS is for messaging what JDBC is for database connections.
 
 # Rabbit MQ
 
