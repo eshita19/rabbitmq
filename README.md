@@ -7,7 +7,7 @@
     - _Loose coupling_: Brings in loose coupling between applications.
     - _Reduce system bottlenecks_: If there are too many messages sent by sender and single receiver is not able to process it, we can scale the number of receivers. 
     
-# Java Messaging Service (JMS)
+# Java Messaging Service (JMS 2.0)
   - There are multiple messaging server available like : ActiveMQ, SonicMQ, TibcoMQ and Websphere MQ.
   - JMS provides a standardised API. All the messaging server uses same API.
 
