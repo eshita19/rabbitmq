@@ -11,6 +11,14 @@
   - There are multiple messaging server available like : ActiveMQ, SonicMQ, TibcoMQ and Websphere MQ.
   - JMS provides a standardised API. All the messaging server uses same API.
   - JMS is for messaging what JDBC is for database connections.
+  - **Two types of messaging**:
+    - **Point to Point messaging(P2P messaging)**:
+      - It is mesant for single receiver.
+      - Sender publishes message to messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
+      - 
+    - **Publish/Subscribe messaging**: 
+    
+     
 
 # Rabbit MQ
 
