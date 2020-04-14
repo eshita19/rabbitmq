@@ -13,15 +13,23 @@
   - JMS is for messaging what JDBC is for database connections.
   - **Two types of messaging**:
     - **Point to Point messaging(P2P messaging)**:
+      - <img src="https://github.com/eshita19/rabbitmq/blob/master/p2p.png"></img>
       - It is for single receiver.
       - Sender publishes message to a virtual channel(queue) in  messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
       - There are two types: ASync Fire and Forget and  Sync request and reply message(reciever sends ack from different queue).
       - Example: Mail or Greeting card.
     - **Publish/Subscribe messaging**: 
+      - <img src="https://github.com/eshita19/rabbitmq/blob/master/pub-sub.png"></img>
       - One sender multiple receiver.
       - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to messaging server, instead of them reading it from messaging server.
       - Example: Newspaper subscription.
-       
+
+# Apache Active MQ
+  - https://www.youtube.com/watch?v=CrpBJgGqhS8&list=PLmCsXDGbJHdgt5mskUPyhtBHQvQsRoJWj
+  - Command to start active mq: `bin/activemq start`
+  - Active MQ admin page: http://localhost:8161, Credentials: admin/admin.
+  
+  
 
 # Rabbit MQ
 
