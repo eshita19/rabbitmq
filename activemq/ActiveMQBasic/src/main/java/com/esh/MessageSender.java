@@ -32,7 +32,7 @@ public class MessageSender {
 			MessageProducer producer = session.createProducer(destination);
 			
 			//Createe message
-			TextMessage msg = session.createTextMessage("Msg from producer");
+			TextMessage msg = session.createTextMessage("Hi Consumer");
 			
 			producer.send(msg);
 		} catch (JMSException e) {

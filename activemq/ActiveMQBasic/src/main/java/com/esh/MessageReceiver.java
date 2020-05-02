@@ -32,7 +32,7 @@ public class MessageReceiver {
 			MessageConsumer consumer = session.createConsumer(destination);
 			
 			//Get message
-			System.out.println(((TextMessage)consumer.receive()).getText());
+			System.out.println("Message from Producer: " +  ((TextMessage)consumer.receive()).getText());
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}finally {
