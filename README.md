@@ -17,11 +17,13 @@
       - It is for single receiver.
       - Sender publishes message to a virtual channel(queue) in  messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
       - There are two types: ASync Fire and Forget and  Sync request and reply message(reciever sends ack from different queue).
+      - Destination : Queue
       - Example: Mail or Greeting card.
     - **Publish/Subscribe messaging**: 
       - <img src="https://github.com/eshita19/rabbitmq/blob/master/pub-sub.png"></img>
       - One sender multiple receiver.
       - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to subscriber, instead of them reading it from messaging server.
+      - Destination : Topic
       - Example: Newspaper subscription.
 
 # Apache Active MQ
@@ -29,7 +31,7 @@
   - Command to start active mq: `bin/activemq start`
   - Active MQ admin page: http://localhost:8161, Credentials: admin/admin.
   
-  
+  .
 
 # Rabbit MQ
 
