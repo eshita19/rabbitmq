@@ -21,7 +21,7 @@
     - **Publish/Subscribe messaging**: 
       - <img src="https://github.com/eshita19/rabbitmq/blob/master/pub-sub.png"></img>
       - One sender multiple receiver.
-      - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to messaging server, instead of them reading it from messaging server.
+      - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to subscriber, instead of them reading it from messaging server.
       - Example: Newspaper subscription.
 
 # Apache Active MQ
