@@ -22,6 +22,7 @@
       - Example: Mail or Greeting card.
     - **Publish/Subscribe messaging**: 
       - <img src="https://github.com/eshita19/rabbitmq/blob/master/pub-sub.png"></img>
+      - https://codenotfound.com/jms-publish-subscribe-messaging-example-activemq-maven.html
       - One sender multiple receiver.
       - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to subscriber, instead of them reading it from messaging server.
       - Durable/Non-durable subscription: If a subscriber id down for sometime and it comes up, it will revieve all messages sent to it(including the ones when it was down).
