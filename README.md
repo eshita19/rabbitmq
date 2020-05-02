@@ -47,9 +47,9 @@
   - https://www.youtube.com/watch?v=CrpBJgGqhS8&list=PLmCsXDGbJHdgt5mskUPyhtBHQvQsRoJWj
   - Command to start active mq: `bin/activemq start`
   - Active MQ admin page: http://localhost:8161, Credentials: admin/admin.
+  - https://github.com/eshita19/rabbitmq/tree/master/activemq/ActiveMQBasic
   
-  .
-
+  
 # Rabbit MQ
 
 - Theory : https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
