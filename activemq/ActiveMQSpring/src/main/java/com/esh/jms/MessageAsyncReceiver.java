@@ -9,7 +9,7 @@ import org.springframework.jms.support.converter.MessageConversionException;
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MessageAsyncReceiver implements MessageListener{
 
 	@Autowired
