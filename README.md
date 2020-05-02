@@ -31,7 +31,7 @@
 # JMS API
   - The basic building blocks of JMS API:
     - **Administered objects** : 
-       - **Connection factories** : An object which client uses to connect to provider.
+       - **Connection factories** : An object which client uses to connect to provider. For eg: ActiveMQConnectionFactory for Active MQ provider.
        - **Destination**: Target of the messages it produces and source of mesaages it consumers. Queue/Topic.
     - **Connections**: Enacapsulate virtual connection with JMS provider.
     - **Sesssion**: Single threaded context for creating producers, consumers, destination.
