@@ -17,20 +17,39 @@
       - It is for single receiver.
       - Sender publishes message to a virtual channel(queue) in  messaging server. Receiver gets message from mesaging server. Messaging server takes care of deleting the message once a receiver has read it.
       - There are two types: ASync Fire and Forget and  Sync request and reply message(reciever sends ack from different queue).
+      - Destination : Queue
+      - Persistent(default) vs Non-Persistent messages: In persistent messages, the messages will be stored in disk unless consumed by consumer and will survive broker restart.
       - Example: Mail or Greeting card.
     - **Publish/Subscribe messaging**: 
       - <img src="https://github.com/eshita19/rabbitmq/blob/master/pub-sub.png"></img>
       - One sender multiple receiver.
-      - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to messaging server, instead of them reading it from messaging server.
+      - The publisher publishes message as a topic in messaging server. The Subscriber subscribes to this topic. Whenever there are new topics they are automatically broadcasted to subscriber, instead of them reading it from messaging server.
+      - Durable/Non-durable subscription: If a subscriber id down for sometime and it comes up, it will revieve all messages sent to it(including the ones when it was down).
+      - Destination : Topic
       - Example: Newspaper subscription.
+      
+# JMS API
+  - The basic building blocks of JMS API:
+    - **Administered objects** : 
+       - **Connection factories** : An object which client uses to connect to provider. For eg: ActiveMQConnectionFactory for Active MQ provider.
+       - **Destination**: Target of the messages it produces and source of mesaages it consumers. Queue/Topic.
+    - **Connections**: Enacapsulate virtual connection with JMS provider.
+    - **Sesssion**: Single threaded context for creating producers, consumers, destination.
+    - **Message producers**: Sends message.
+    - **Message consumers**: Consumes message
+    - **Messages**: JMS messages.
+    - **JMS message selector**: Message consumer can specify a filter string to filter the message it receives. The filtering job is done by message broker.
+    - **JMS Queue browsers**: Inspect the messages present in queue, not yet sent to consumer.
+    - **JMS Message listener**: An asynchronous event handler at consumer end where we can specify an action when msg arrives.
+    - **JMS Exception Handling**: The root class for exceptions thrown by JMS API methods is JMSException 
 
 # Apache Active MQ
   - https://www.youtube.com/watch?v=CrpBJgGqhS8&list=PLmCsXDGbJHdgt5mskUPyhtBHQvQsRoJWj
   - Command to start active mq: `bin/activemq start`
   - Active MQ admin page: http://localhost:8161, Credentials: admin/admin.
+  - https://github.com/eshita19/rabbitmq/tree/master/activemq/ActiveMQBasic
   
   
-
 # Rabbit MQ
 
 - Theory : https://www.cloudamqp.com/blog/2015-05-18-part1-rabbitmq-for-beginners-what-is-rabbitmq.html
