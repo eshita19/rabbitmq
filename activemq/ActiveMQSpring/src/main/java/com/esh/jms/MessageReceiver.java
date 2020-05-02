@@ -1,4 +1,4 @@
-package com.esh.config;
+package com.esh.jms;
 
 import javax.jms.JMSException;
 
@@ -16,7 +16,7 @@ public class MessageReceiver {
 	@Autowired
 	MessageConverter messageConverter;
 
-	public String getMessage() throws MessageConversionException, JmsException, JMSException {
-		return (String) (messageConverter.fromMessage(jmsTemplate.receive()));
+	public Student getMessage() throws MessageConversionException, JmsException, JMSException {
+		return (Student) (messageConverter.fromMessage(jmsTemplate.receive()));
 	}
 }

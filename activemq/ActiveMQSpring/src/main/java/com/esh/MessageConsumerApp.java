@@ -8,7 +8,7 @@ import org.springframework.jms.JmsException;
 import org.springframework.jms.support.converter.MessageConversionException;
 
 import com.esh.config.AppConfig;
-import com.esh.config.MessageReceiver;
+import com.esh.jms.MessageReceiver;
 
 public class MessageConsumerApp {
 	public static void main(String[] args) throws MessageConversionException, JmsException, JMSException

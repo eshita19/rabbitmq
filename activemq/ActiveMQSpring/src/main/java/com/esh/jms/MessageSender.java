@@ -1,4 +1,4 @@
-package com.esh.config;
+package com.esh.jms;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -15,11 +15,11 @@ public class MessageSender {
 	@Autowired
 	JmsTemplate jmsTemplate;
 	
-	public void sendMessage(String message){
+	public void sendMessage(Student student){
 		jmsTemplate.send(new MessageCreator() {
 			@Override
 			public Message createMessage(Session session) throws JMSException {
-				return  session.createObjectMessage(message);
+				return  session.createObjectMessage(student);
 			}
 		});
 	}
